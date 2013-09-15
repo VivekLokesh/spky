@@ -1,5 +1,5 @@
 # spky Web App
 
-Initial version for spky
+Initial Version for spky
 
 by spky Team
