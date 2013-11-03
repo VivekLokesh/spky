@@ -1,14 +1,22 @@
+<% if user_signed_in? %>
+<h1>Now you're just clicks away!</h1>
+<% else %>
+
 <div class="hero-unit">
 	<h2>You're looking at what will soon become SpotOkay!</h2>
 	<p>
 
 	</p>
 	<p>
+		<!-- <a href="http://spotokay.com">Your Spot...Okay!!</a> -->
+		<%= link_to "Let's get your Spot..Okay!!", "http://spotokay.com" %>
+	</p>
+	
+	<p>
 		Feel free to stop by later
 	</p>
 	<p>
-		<!-- <a href="http://spotokay.com">Your Spot...Okay!!</a> -->
-		<%= link_to "Your Spot...Okay!!", "http://spotokay.com" %>
+
 	</p>
 	<p>
 		Or you could sign up to get an exclusive invite to try our beta
@@ -17,7 +25,8 @@
 	<p>
 		<!-- <a href="#">Sign Up!</a> -->
 		<!-- <a class="btn btn-primary btn-lg">SignUp Now</a> -->
-		<%= link_to "SignUp Now", "#", class: "btn btn-primary btn-large" %>
+		<%= link_to "SignUp Now", new_user_registration_path, class: "btn btn-primary btn-large" %>
 		
 	</p>
 </div>
+<% end %>
